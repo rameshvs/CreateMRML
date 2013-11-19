@@ -79,12 +79,12 @@ double MRMLColorableHelper::GetB()
 void MRMLColorableHelper::Print()
 {
    MRMLNodeHelper::Print() ;
-   std::cout << "Color: " << colorNode->GetTypeAsIDString() << std::endl ;
+   std::cout << "Color: " << colorNode->GetTypeAsString() << std::endl ;
 }
 
 std::string MRMLColorableHelper::GetColor()
 {
-   return colorNode->GetTypeAsIDString() ;
+   return colorNode->GetTypeAsString() ;
 }
 
 void MRMLColorableHelper::SetColor( int color )
